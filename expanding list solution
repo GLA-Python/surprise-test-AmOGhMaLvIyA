@@ -1,0 +1,12 @@
+#expanding list solution 
+
+def expand(a):
+    for i in range(len(a)-1):
+        sub=abs(a[i+1]-a[i])
+    if abs(a[i]-a[i-1])<sub:
+        print('True')
+    else:
+        print('False')
+
+a=list(map(int,input().split()))
+out=expand(a)
